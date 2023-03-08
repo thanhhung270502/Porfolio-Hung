@@ -2,4 +2,9 @@
     .pc__header {
         justify-content: space-evenly !important;
     }
+
+    .content {
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
 }
