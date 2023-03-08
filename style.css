@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* transition: all 0.15s ease; */
+}
+
+body {
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -------------------- Header -------------------- */
+.inner__header {
+    background-color: var(--blue-light) !important;
+    /* height: 70px; */
+}
+
+.header__logo {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--blue-dark);
+}
+
+.header__logo:hover {
+    color: var(--blue-dark);
+}
+
+.header__logo span {
+    color: var(--black);
+}
+
+.header__menu {
+    flex-grow: unset;
+}
+
+.header__menu .header__item {
+    padding: 0 0.5rem;
+}
+
+.header__menu .header__item .header__link {
+    color: var(--blue-dark);
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
