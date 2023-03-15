@@ -1,0 +1,43 @@
+#skill-section {
+    color: var(--black);
+}
+
+.skill__title {
+    font-family: 'Play', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 0 2rem;
+}
+
+.skill__selectors {
+    font-family: 'Play', sans-serif;
+    font-size: 1.25rem;
+    padding: 1.5rem 0 0.5rem;
+}
+
+.skill__selector {
+    padding: 0 1rem;
+    color: var(--black);
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.skill__selector:hover {
+    color: var(--blue-dark);
+}
+
+.skill_selector-active {
+    color: var(--blue-dark);
+}
+
+.skill__item p {
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.skill__image {
+    width: 125px;
+    height: 125px;
+    line-height: 125px;
+    margin: auto;
+}

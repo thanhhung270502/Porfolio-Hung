@@ -7,6 +7,7 @@
 
 body {
     /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
     background-color: var(--body-one);
     background-image: linear-gradient(315deg, var(--body-one) 0%, var(--body-two) 74%);
 }
@@ -56,6 +57,7 @@ a {
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
+    font-family: 'Play', sans-serif;
 }
 
 .header__menu .header__item .header__link:hover {
@@ -65,7 +67,7 @@ a {
 /* -------------------- Content -------------------- */
 .content {
     padding-top: 70px;
-    height: 200vh;
+    height: 300vh;
 }
 
 .section {
@@ -77,4 +79,5 @@ a {
     font-weight: bold;
     color: var(--blue-dark);
     text-align: center;
+    font-family: 'Play', sans-serif;
 }

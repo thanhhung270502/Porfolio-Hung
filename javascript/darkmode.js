@@ -22,6 +22,7 @@ if (currentTheme) {
 
 toggleSwitch.onclick = () => {
     if (darkmode.classList.contains('uil-sun')) {
+        
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
 
