@@ -1,0 +1,46 @@
+.project-item {
+    padding: 1rem 0;
+    color: var(--black);
+}
+
+.project__title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--black);
+}
+
+.carousel-inner {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.project-info {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.project-info span {
+    font-weight: bold;
+}
+
+.carousel-caption {
+    color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.carousel-indicators button {
+    background-color: black !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    opacity: 0.3 !important;
+}
+
+.carousel-indicators .active {
+    opacity: 1 !important;
+}

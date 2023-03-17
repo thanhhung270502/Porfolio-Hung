@@ -21,12 +21,16 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
 
   <!-- Manual CSS -->
-  <link rel="stylesheet" href="./assets/stylesheets/style.css">
   <link rel="stylesheet" href="./assets/stylesheets/home.css">
   <link rel="stylesheet" href="./assets/stylesheets/education.css">
   <link rel="stylesheet" href="./assets/stylesheets/skill.css">
+  <link rel="stylesheet" href="./assets/stylesheets/project.css">
   <link rel="stylesheet" href="./assets/stylesheets/responsive.css">
   <link rel="stylesheet" href="./assets/stylesheets/darkmode.css">
+  
+  <!-- Carousel CSS -->
+  <link rel="stylesheet" href="./assets/stylesheets/carousel.css">
+  <link rel="stylesheet" href="./assets/stylesheets/style.css">
 </head>
 <body>
   <!-- Header -->
@@ -43,7 +47,7 @@
         <div class="collapse navbar-collapse header__menu" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item header__item">
-              <a href="" class="nav-link header__link">Home</a>
+              <a href=" ./index.html" class="nav-link header__link">Home</a>
             </li>
             <li class="nav-item header__item">
               <a href="" class="nav-link header__link">Education</a>
@@ -287,7 +291,18 @@
 
     <div id="project-section" class="section">
       <div class="section-title"><i class="uil uil-channel"></i> Project</div>
+      <div class="project-item">
+        <a href="./project/shopping_cart/index.html" class="project__title">1. Shopping Cart</a>
+        <div class="project__language">
+          Ruby on Rails, HTML, CSS, JASS, JavaScript, PostgreSQL, Git, Docker
+        </div>
+        <div class="pt-3">
+          <img src="./project/shopping_cart/images/1.png" alt="" class="img-fluid">
+        </div>
+      </div>
     </div>
+
+
   </div>
 
   <!-- Bootstrap JS -->
@@ -296,5 +311,7 @@
   <!-- Manual JS -->
   <script src="./javascript/main.js"></script>
   <script src="./javascript/darkmode.js"></script>
+  <!-- Carousel JS -->
+  <script src="./javascript/carousel.js"></script>
 </body>
 </html>
