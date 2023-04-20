@@ -1,0 +1,31 @@
+#summary-section {
+    background-color: var(--primary-body-2);
+    height: 100vh;
+}
+
+.summary-img {
+    background-image: linear-gradient(to bottom right,var(--primary), var(--yellow));
+    border-radius: 1000px;
+    text-align: center;
+    height: 80vh;
+}
+
+.summary-img img {
+    transform: scale(1.25);
+}
+
+.summary-item {
+    padding: 2rem 1rem 4rem;
+}
+
+.summary-item-title {
+    color: var(--primary);
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.summary-item-content {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

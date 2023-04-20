@@ -9,12 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   <!-- Font -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Play&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
   <!-- Icon -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -22,14 +19,15 @@
 
   <!-- Manual CSS -->
   <link rel="stylesheet" href="./assets/stylesheets/home.css">
+  <link rel="stylesheet" href="./assets/stylesheets/summary.css">
   <link rel="stylesheet" href="./assets/stylesheets/education.css">
   <link rel="stylesheet" href="./assets/stylesheets/skill.css">
   <link rel="stylesheet" href="./assets/stylesheets/project.css">
+  <link rel="stylesheet" href="./assets/stylesheets/contact.css">
   <link rel="stylesheet" href="./assets/stylesheets/responsive.css">
   <link rel="stylesheet" href="./assets/stylesheets/darkmode.css">
   
   <!-- Carousel CSS -->
-  <link rel="stylesheet" href="./assets/stylesheets/carousel.css">
   <link rel="stylesheet" href="./assets/stylesheets/style.css">
 </head>
 <body>
@@ -38,8 +36,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary inner__header">
       <div class="container-fluid pc__header">
         <a class="navbar-brand header__logo" href="#">
-          THANH
-          <span>HUNG</span>
+          Thanh Hung
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -72,237 +69,270 @@
     </nav>
   </header>
 
-  <!-- Content -->
-  <div class="content">
-    <!-- Home -->
-    <div class="section home-section">
+  <!-- Home -->
+  <div id="home-section" class="d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="inner-home">
+        <div class="home-title">
+          <div class="home-pos">Web Developer</div>
+          <div class="home-name">Ly Thanh Hung</div>
+        </div>
+        <a class="home-btn" href="#">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div id="summary-section" class="d-flex justify-content-center align-items-center">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12">
-          <div class="d-flex justify-content-center">
-            <div class="home__image">
-              <img src="./assets/images/my_picture.jpg" alt="My picture" class="img-fluid">
+        <div class="d-flex flex-column justify-content-between col-4">
+          <div class="summary-item">
+            <div class="summary-item-title">Biography</div>
+            <div class="summary-item-content">
+              Work for money and code for love!
+              I am Thanh Hung, a potential developer in Vietnam.
             </div>
-          </div >
+          </div>
+          <div class="summary-item">
+            <div class="summary-item-title">Contact</div>
+            <div class="summary-item-content">
+              thanhhung270502@gmail.com <br>
+              (+84) 923 115 467
+            </div>
+          </div>
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-12">
-          <div class="home__data">
-            <h1>Hi, I'm Hung</h1>
-            <h4>Coder</h4>
-            <p>
-              My full name is Ly Thanh Hung. I am embarking on higher education in Information Technology at Bach Khoa HCM City. <br>
-              I love coding websites and applications. <br>
-              Beside programming, playing basketball is my favorite activity.
-            </p>
-            <a href="#">Download CV <i class="uil uil-import"></i></a>
+        <div class="col-4">
+          <div class="d-flex justify-content-center align-items-center summary-img">
+            <img src="./assets/images/Untitled-1-01.png" alt="" class="img-fluid">
           </div>
-        </div>  
-      </div>
-    </div>
-
-    <!-- Education -->
-    <div id="education-section" class="section">
-      <div class="section-title"><i class="uil uil-graduation-cap"></i> Education</div>
-      <div class="pt-4">
-        <div class="d-flex justify-content-between pt-4 education__item">
-          <div class="education__data">
-            <div class="education__data-title">
-              Ho Chi Minh city University of Technology
-            </div>
-            <div class="education__data-description">
-              Major: Computer Science
-            </div>
-          </div>
-          <div class="education__time">08/2020 - Present</div>
         </div>
-        <div class="d-flex justify-content-between pt-4 education__item">
-          <div class="education__data">
-            <div class="education__data-title">
-              Nguyen Thi Minh Khai High School for the Gifted - Soc Trang
-            </div>
-            <div class="education__data-description">
-              Specialization: Mathematics
+        <div class="d-flex flex-column justify-content-between col-4">
+          <div class="summary-item">
+            <div class="summary-item-title">GPA</div>
+            <div class="summary-item-content">
+              7.7
             </div>
           </div>
-          <div class="education__time">09/2017 - 06/2020</div>
-        </div>
-      </div >
-    </div>
-
-    <!-- Skills -->
-    <div id="skill-section" class="section">
-      <div class="section-title"><i class="uil uil-lottiefiles"></i> Skills</div>
-      <div class="d-flex justify-content-center skill__selectors">
-        <div class="skill__selector skill_selector-active">
-          All
-        </div>
-        <span>|</span>
-        <div class="skill__selector">
-          Languages
-        </div>
-        <span>|</span>
-        <div class="skill__selector">
-          Frameworks
-        </div>
-        <span>|</span>
-        <div class="skill__selector">
-          Library
-        </div>
-        <span>|</span>
-        <div class="skill__selector">
-          Databases
-        </div>
-        <span>|</span>
-        <div class="skill__selector">
-          Tools
-        </div>
-      </div>
-      <div class="pt-4">
-        <div class="row">
-          <!-- Languages -->
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/c.png" alt="" class="img-fluid">
-              </div>
-              <p>C++</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/python.png" alt="" class="img-fluid">
-              </div>
-              <p>Python</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/ruby.png" alt="" class="img-fluid">
-              </div>
-              <p>Ruby</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/php1.png" alt="" class="img-fluid">
-              </div>
-              <p>PHP</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/js.png" alt="" class="img-fluid">
-              </div>
-              <p>JavaScript</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/html.png" alt="" class="img-fluid">
-              </div>
-              <p>HTML</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/css.png" alt="" class="img-fluid">
-              </div>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/sass.png" alt="" class="img-fluid">
-              </div>
-              <p>SASS</p>
-            </div>
-          </div>
-          <!-- Frameworks -->
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/react.png" alt="" class="img-fluid">
-              </div>
-              <p>React</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/rails.png" alt="" class="img-fluid">
-              </div>
-              <p>Ruby on Rails</p>
-            </div>
-          </div>
-          <!-- Library -->
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/bootstrap.png" alt="" class="img-fluid">
-              </div>
-              <p>Bootstrap</p>
-            </div>
-          </div>
-          <!-- Databases -->
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/mysql.png" alt="" class="img-fluid">
-              </div>
-              <p>MySQL</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/postgresql.png" alt="" class="img-fluid">
-              </div>
-              <p>PostgreSQL</p>
-            </div>
-          </div>
-          <!-- Tools -->
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/docker.png" alt="" class="img-fluid">
-              </div>
-              <p>Docker</p>
-            </div>
-          </div>
-          <div class="col-2 skill__item">
-            <div class="text-center">
-              <div class="skill__image">
-                <img src="./assets/images/github.png" alt="" class="img-fluid">
-              </div>
-              <p>Github</p>
+          <div class="summary-item">
+            <div class="summary-item-title">Project done</div>
+            <div class="summary-item-content">
+              4
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Project -->
+  <!-- Skills -->
+  <div id="skill-section">
+    <div class="skill-title"><span>Technical</span> Skills</div>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="skill-item">
+        <img src="./assets/images/c.png" alt="" class="img-fluid">
+      </div>
+      <div class="skill-item">
+        <img src="./assets/images/python.png" alt="" class="img-fluid">
+      </div>
+      <div class="skill-item">
+        <img src="./assets/images/js.png" alt="" class="img-fluid">
+      </div>
+      <div class="skill-item">
+        <img src="./assets/images/react.png" alt="" class="img-fluid">
+      </div>
+      <div class="skill-item">
+        <img src="./assets/images/nodejs.png" alt="" class="img-fluid">
+      </div>
+      <div class="skill-item">
+        <img src="./assets/images/rails.png" alt="" class="img-fluid">
+      </div>
+      <div class="skill-item">
+        <img src="./assets/images/postgresql.png" alt="" class="img-fluid">
+      </div>
+      <div class="skill-item">
+        <img src="./assets/images/docker.png" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
 
-    <div id="project-section" class="section">
-      <div class="section-title"><i class="uil uil-channel"></i> Project</div>
+  <!-- Project -->
+  <div id="project-section">
+    <div class="project-title"><span>My</span> Projects</div>
+    <div class="d-flex project-container">
       <div class="project-item">
-        <a href="./project/shopping_cart/index.html" class="project__title">1. Shopping Cart</a>
-        <div class="project__language">
-          Ruby on Rails, HTML, CSS, JASS, JavaScript, PostgreSQL, Git, Docker
+        <div class="project-block">
+          <img src="./assets/images/projects/1.png" alt="" class="project-img">
+          <div class="d-flex justify-content-center align-items-center project-link">
+            <a class="project-href" href="https://github.com/thanhhung270502/hopee_shopping_cart">
+              Link github <i class="uil uil-arrow-right"></i>
+            </a>
+          </div>
         </div>
-        <div class="pt-3">
-          <img src="./project/shopping_cart/images/1.png" alt="" class="img-fluid">
+      </div>
+      <div class="project-item">
+        <div class="project-block">
+          <img src="./assets/images/projects/2.png" alt="" class="project-img">
+          <div class="d-flex flex-column justify-content-center align-items-center project-link">
+            <a class="project-href" href="https://github.com/thanhhung270502/tutor-student-fe">
+              Link github FE <i class="uil uil-arrow-right"></i>
+            </a>
+            <a class="project-href" href="https://github.com/thanhhung270502/tutor_student_be">
+              Link github BE <i class="uil uil-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-block">
+          <img src="./assets/images/projects/3.png" alt="" class="project-img">
+          <div class="d-flex flex-column justify-content-center align-items-center project-link">
+            <a class="project-href" href="https://github.com/thanhhung270502/billoby-hotel-fe">
+              Link github FE <i class="uil uil-arrow-right"></i>
+            </a>
+            <a class="project-href" href="https://github.com/thanhhung270502/billoby-hotel-be">
+              Link github BE <i class="uil uil-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-block">
+          <img src="./assets/images/projects/4.png" alt="" class="project-img">
+          <div class="d-flex justify-content-center align-items-center project-link">
+            <a class="project-href" href="https://github.com/thanhhung270502/VLNHShop">
+              Link github <i class="uil uil-arrow-right"></i>
+              </a>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <!-- Contact -->
+  <div id="contact-section">
+    <div class="container">
+      <div class="contact-title">
+        <span>Contact</span> Me
+      </div>
+      <div class="contact-content">
+        <div class="d-flex align-items-center">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="d-flex align-items-center contact-item">
+              <div class="contact-item-left">
+                <i class="uil uil-github"></i>
+              </div>
+              <div class="contact-item-right">
+                <a class="contact-link" href="https://github.com/thanhhung270502">
+                  https://github.com/thanhhung270502
+                </a>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center contact-item">
+              <div class="contact-item-left">
+                <i class="uil uil-linkedin"></i>
+              </div>
+              <div class="contact-item-right">
+                <a class="contact-link" href="https://www.linkedin.com/in/ly-thanh-hung-618279215/">
+                  https://www.linkedin.com/in/ly-thanh-hung-618279215/
+                </a>
+              </div>
+            </div>
 
+            <div class="d-flex align-items-center contact-item">
+              <div class="contact-item-left">
+                <i class="uil uil-facebook"></i>
+              </div>
+              <div class="contact-item-right">
+                <a class="contact-link" href="https://www.facebook.com/thanhhung.ly.100/">
+                  https://www.facebook.com/thanhhung.ly.100/
+                </a>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center contact-item">
+              <div class="contact-item-left">
+                <i class="uil uil-envelope"></i>
+              </div>
+              <div class="contact-item-right">
+                <div class="contact-link">
+                  thanhhung270502@gmail.com
+                </div>
+              </div>
+            </div>
+<!-- 
+            <div class="d-flex align-items-center">
+              <div class="col-6 pe-2">
+                <div class="d-flex align-items-center contact-item">
+                  <div class="contact-item-left">
+                    <i class="uil uil-location-pin-alt"></i>
+                  </div>
+                  <div class="contact-item-right">
+                    <div class="contact-link">
+                      Ho Chi Minh City
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 ps-2">
+                <div class="d-flex align-items-center contact-item">
+                  <div class="contact-item-left">
+                    <i class="uil uil-phone"></i>
+                  </div>
+                  <div class="contact-item-right">
+                    <div class="contact-link">
+                      0923-115-467
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="d-flex align-items-center contact-item">
+              <div class="contact-item-left">
+                <i class="uil uil-location-pin-alt"></i>
+              </div>
+              <div class="contact-item-right">
+                <div class="contact-link">
+                  Ho Chi Minh City
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center contact-item">
+              <div class="contact-item-left">
+                <i class="uil uil-phone"></i>
+              </div>
+              <div class="contact-item-right">
+                <div class="contact-link">
+                  0923-115-467
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+          <!-- <div class="contact-item">
+            <a href="#" class="d-flex contact-link">
+              <i class="uil uil-facebook"></i>
+            </a>
+          </div>
+          <div class="contact-item">
+              <a href="#" class="contact-link">
+                <i class="uil uil-linkedin"></i>
+              </a>
+          </div>
+          <div class="contact-item">
+              <a href="#" class="contact-link">
+              <i class="uil uil-github"></i>
+            </a>
+          </div> -->
+        </div>
+      </div>  
+    </div>
   </div>
 
   <!-- Bootstrap JS -->
