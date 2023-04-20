@@ -1,46 +1,82 @@
+#project-section {
+    padding-top: 4rem;
+    background-color: var(--primary-body-2);
+}
+
+.project-title {
+    font-size: 2.5rem;
+    padding-bottom: 4rem;
+    color: var(--primary);
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-title span {
+    color: var(--black);
+}
+
+.project-container{
+    overflow-x: scroll;
+    /* scroll-snap-type: x mandatory; */
+    gap: 10px;
+}
+
+.project-container::-webkit-scrollbar-thumb {
+    background-color: #FF8D5C;
+}
+
 .project-item {
-    padding: 1rem 0;
-    color: var(--black);
+    position: relative;
+    min-width: 700px;
+    min-height: 400px;
+    max-width: 700px;
+    max-height: 400px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    opacity: 1;
 }
 
-.project__title {
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: var(--black);
+.project-block {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.carousel-inner {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+.project-img {
+    min-width: 400px;
+    min-height: 400px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.project-info {
-    padding-bottom: 1rem;
-    font-size: 1.1rem;
+.project-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    opacity: 0;
+    font-size: 0.9rem
 }
 
-.project-info span {
-    font-weight: bold;
+.project-link a {
+    color: white;
 }
 
-.carousel-caption {
-    color: black;
+.project-item:hover .project-img {
+    filter: grayscale();
+    transform: scale(1.1);
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: black;
-    border-radius: 5px;
+.project-item:hover .project-link{
+    opacity: 1;
 }
 
-.carousel-indicators button {
-    background-color: black !important;
-}
-
-.carousel-indicators [data-bs-target] {
-    opacity: 0.3 !important;
-}
-
-.carousel-indicators .active {
-    opacity: 1 !important;
+.project-href {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 2rem;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 10px;   
 }

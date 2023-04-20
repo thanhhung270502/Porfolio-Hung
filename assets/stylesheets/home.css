@@ -1,32 +1,24 @@
-.home-section {
+#home-section {
+    padding: 5rem 0;
+    text-align: center;
+    height: calc(100vh - 85.2px);
+    width: 100%;
 }
 
-.home__image {
-    width: 300px;
+.home-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    padding-bottom: 3rem;
 }
 
-.home__image img {
-    border-radius: 50%;
+.home-pos {
+    color: var(--primary);
 }
 
-.home__data h1 {
-    color: var(--blue-dark);
+.home-btn {
+    background-image: linear-gradient(to bottom right,var(--primary), var(--yellow));
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 100px;
     font-weight: bold;
-}
-
-.home__data h4 {
-    padding: 1rem 0;
-    color: var(--black);
-}
-
-.home__data p {
-    margin-bottom: 2rem;
-    color: var(--black);
-}
-
-.home__data a {
-    background-color: var(--blue-dark);
-    color: var(--white);
-    padding: 0.75rem 1rem;
-    border-radius: 5px;
 }
