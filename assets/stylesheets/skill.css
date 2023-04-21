@@ -1,6 +1,6 @@
 #skill-section {
     color: var(--black);
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
 }
 
 .skill-title {
@@ -16,8 +16,9 @@
 }
 
 .skill-item {
-    width: calc(100% / 10);
+    width: calc(100% / 8);
     filter: grayscale();
+    padding: 1rem;
 }
 
 .skill-item:hover {

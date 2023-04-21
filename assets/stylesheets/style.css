@@ -21,44 +21,79 @@ a {
 }
 
 /* -------------------- Header -------------------- */
-.header-section {
-    width: 100%;
+#header-section {
+    min-height: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav-item {
+    font-size: 20px;
+    padding: 0 1.5rem;
+}
+
+.header__nav-link {
+    color: var(--black);
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.header__nav-link:hover {
+    color: var(--primary);
+}
+
+.header__nav-link:hover::after {
+    content: "";
+    z-index: 1;
+    background-color: var(--primary);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 100rem;
+    transition: all 0.3s ease;
+}
+
+.header__nav-link-active {
+    color: var(--primary);
+}
+
+.header__nav-link-active::after {
+    content: "";
+    z-index: 1;
+    background-color: var(--primary);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 100rem;
+    transition: all 0.3s ease;
 }
 
 .header__logo {
-    font-weight: bold;
-    font-size: 1.8rem;
-    color: var(--primary);
-}
-
-.header__logo:hover {
-    color: var(--primary);
-}
-
-.header__logo span {
-    color: var(--black);
-}
-
-.header__menu {
-    flex-grow: unset;
-}
-
-.header__menu .header__item {
-    padding: 0 0.5rem;
-}
-
-.header__menu .header__item .header__link {
-    color: var(--black);
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-family: 'Fraunces', serif;
     cursor: pointer;
-    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
 }
 
-.header__menu .header__item .header__link:hover {
-    color: var(--primary);
+.header__switch {
+    min-width: 450px;
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
 }
-
 /* -------------------- Content -------------------- */
 .content {
     padding-top: 70px;
@@ -75,11 +110,4 @@ a {
     color: var(--blue-dark);
     text-align: center;
     font-family: 'Play', sans-serif;
-}
-
-@media (min-width: 1024px) {
-    .inner__header {
-        background-color: transparent !important;
-        padding: 1rem 0;
-    }
 }

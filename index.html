@@ -11,7 +11,7 @@
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Poppins&display=swap" rel="stylesheet">
 
   <!-- Icon -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -32,43 +32,44 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="header-section">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary inner__header">
-      <div class="container-fluid pc__header">
-        <a class="navbar-brand header__logo" href="#">
-          Thanh Hung
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse header__menu" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item header__item">
-              <a href=" ./index.html" class="nav-link header__link">Home</a>
-            </li>
-            <li class="nav-item header__item">
-              <a href="" class="nav-link header__link">Education</a>
-            </li>
-            <li class="nav-item header__item">
-              <a href="" class="nav-link header__link">Skill</a>
-            </li>
-            <li class="nav-item header__item">
-              <a href="" class="nav-link header__link">Project</a>
-            </li>
-            <li class="nav-item header__item">
-              <a href="" class="nav-link header__link">Contact</a>
-            </li>
-            <li class="nav-item header__item">
-              <div href="" class="nav-link header__link switch__darkmode">
-                <i class="uil uil-moon darkmode"></i>
-              </div>
-            </li>
-          </ul>
-        </div>
+  <header id="header-section">
+    <div class="header__nav">
+      <div class="d-flex align-items-center justify-content-center header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link header__nav-link-active">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Skills</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Projects</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Contact</a>
+        </li>
       </div>
-    </nav>
+    </div>
+    <div class="header__logo">THL</div>
+    <div class="header__switch">
+      <div class="switch__darkmode">
+        <i class="uil uil-moon darkmode"></i>
+      </div>
+    </div>
   </header>
-
+  <div class="header__nav" id="header__nav-mobile">
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link header__nav-link-active">Home</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Skills</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Projects</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#" class="header__nav-link">Contact</a>
+    </li>
+  </div>
   <!-- Home -->
   <div id="home-section" class="d-flex justify-content-center align-items-center">
     <div class="container">
@@ -85,52 +86,27 @@
   </div>
 
   <!-- Summary -->
-  <div id="summary-section" class="d-flex justify-content-center align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="d-flex flex-column justify-content-between col-4">
-          <div class="summary-item">
-            <div class="summary-item-title">Biography</div>
-            <div class="summary-item-content">
-              Work for money and code for love!
-              I am Thanh Hung, a potential developer in Vietnam.
-            </div>
-          </div>
-          <div class="summary-item">
-            <div class="summary-item-title">Contact</div>
-            <div class="summary-item-content">
-              thanhhung270502@gmail.com <br>
-              (+84) 923 115 467
-            </div>
-          </div>
+  <div id="summary-section">
+    <div class="summary-inner">
+      <div class="col-6 summary__image">
+        <img src="./assets/images/mypicture.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-6 summary__text">
+        <div class="summary__title">
+          About me
         </div>
-        <div class="col-4">
-          <div class="d-flex justify-content-center align-items-center summary-img">
-            <img src="./assets/images/Untitled-1-01.png" alt="" class="img-fluid">
-          </div>
-        </div>
-        <div class="d-flex flex-column justify-content-between col-4">
-          <div class="summary-item">
-            <div class="summary-item-title">GPA</div>
-            <div class="summary-item-content">
-              7.7
-            </div>
-          </div>
-          <div class="summary-item">
-            <div class="summary-item-title">Project done</div>
-            <div class="summary-item-content">
-              4
-            </div>
-          </div>
+        <div class="summary__description">
+          I'm Thanh Hung, a Web Developer. I have 6 months of experience with front-end and back-end. Besides, I have always been passionate about solving problems, optimizing performance, and bringing the best
+          user experience.
         </div>
       </div>
     </div>
   </div>
-
+  
   <!-- Skills -->
   <div id="skill-section">
     <div class="skill-title"><span>Technical</span> Skills</div>
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="row justify-content-center align-items-center">
       <div class="skill-item">
         <img src="./assets/images/c.png" alt="" class="img-fluid">
       </div>
@@ -219,9 +195,9 @@
       </div>
       <div class="contact-content">
         <div class="d-flex align-items-center">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
-            <div class="d-flex align-items-center contact-item">
+          <div class="col-sm-0 col-lg-2"></div>
+          <div class="col-sm-12 col-lg-8">
+            <div class="d-flex align-items-center justify-content-center contact-item">
               <div class="contact-item-left">
                 <i class="uil uil-github"></i>
               </div>
@@ -314,7 +290,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2"></div>
+          <div class="col-sm-0 col-lg-2"></div>
           <!-- <div class="contact-item">
             <a href="#" class="d-flex contact-link">
               <i class="uil uil-facebook"></i>
